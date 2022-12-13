@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c1c1c5;
+    font-family: "Rubik",sans-serif;
+    letter-spacing: 1px;
+    position: relative;
+}
+.calculator{
+    width: 21%;
+    height: 60%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1%;
+    gap: 3% 0%;
+    border-radius: 10px;;
+    background-color: #EFF0F5;
+    box-shadow: -3px -3px 7px #fff,  10px 10px 15px #777676;
+}
+.result{
+    width: 90%;
+    height: 23%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 4%;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: inset 4px 4px 4px #ababab, inset -4px -4px 8px #fff;
+}
+.buttons{
+    width: 90%;
+    height: 70%;
+    display: grid; 
+    grid-template-columns: 25% 25% 25% 25%; 
+    grid-template-rows: 20% 20% 20% 20%; 
+    transform: translateX(2%);
+    align-items: center;
+    gap: 0% 0%; 
+}
+.buttons span{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: -3px -3px 4px #fff, -3px -3px 5px #fff, 1px 1px 1px #ababab, 3px 3px 3px #ababab;
+    font-weight: bolder;
+    font-size: 1.4em;
+    transition: .1s;
+}
+.buttons span:active{
+    transform: scale(.94);
+    box-shadow: 0 0 0 #c1c1c5;
+}
+.buttons span:nth-child(1){
+    grid-column: 1/3;
+    grid-row: 1 / 2;
+    width: 90%;
+    background-color: #F64238;
+    color: #fff;
+}
+.buttons span:nth-child(11){
+    grid-column: 4 / 4;
+    grid-row: 3 / 5;
+    height: 85%;
+    background-color: #33A336;
+    color: #fff;
+}
+.buttons span:nth-child(18){
+    color: #fff;
+    background-color: #1A76C3;
+}
+.checkbox{
+    position: absolute;
+    right: 3%;
+    top: 6%;
+    width: 2%;
+    height: 4%;
+    border-radius: 50%;
+    background-color: #EFF0F5;
+    cursor: pointer;
+    box-shadow: 2px 1px 2px #3a3737, inset 4px 0px 3px #ababab;
+}
+.checkbox:active{
+    transform: scale(.9);
+    box-shadow: 1px 1px 1px #3a3737, inset 2px 0px 2px #ababab;
+}
