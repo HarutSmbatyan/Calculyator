@@ -27,6 +27,16 @@
         max-height: 25px;
     }
 }
+@media screen and (min-width: 325px) and (max-width: 375px){
+    .calculator{
+        min-width: 90%;
+        min-height: 85%;
+    }
+    .checkbox{
+        max-width: 20px;
+        max-height: 20px;
+    }
+}
 @media screen and (min-width: 100px) and (max-width: 325px){
     .calculator{
         min-width: 100%;
